@@ -13,6 +13,6 @@ pages:
     - mv styleguide public
   artifacts:
     paths:
-      - styleguide
+      - public
   only:
     - development
