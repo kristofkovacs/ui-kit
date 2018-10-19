@@ -1,5 +1,5 @@
 {
-  "name": "cogito-frontend",
+  "name": "cogito-uikit",
   "homepage": "./",
   "version": "0.1.0",
   "private": false,
@@ -16,7 +16,8 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json"    
   },
   "devDependencies": {
     "@types/grid-styled": "^4.2.1",
