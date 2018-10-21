@@ -10,9 +10,9 @@ pages:
     - npm install
     - npm run build
     - rm -rf public
-    - mv build public
+    - mv styleguide public
   artifacts:
     paths:
-      - styleguide
+      - public
   only:
     - development
