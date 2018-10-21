@@ -1,0 +1,5 @@
+Heading example:
+
+```js
+<PrimaryHeading />
+```
