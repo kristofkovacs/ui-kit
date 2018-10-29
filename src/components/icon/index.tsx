@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Text as Base } from 'rebass';
+import { Box as Base } from 'rebass';
 
 import styled from 'styled-components';
 
 // Style components take CSS in a template string. Even Sass functions with work!
 // Each element is a property of styled, like h3, p, div, etc...
-export const TextWrapper = styled(Base)`
+export const IconWrapper = styled(Base)`
   border-radius: 20px;
-  padding: 15px;
+  padding: 0px;
   background: ${(props) => props.theme.colors.gradient};
   transition: all 0.2s ease-in-out;
 
@@ -24,9 +24,9 @@ export const TextWrapper = styled(Base)`
  *
  */
 
-function Button(props: any) {
-  return <TextWrapper {...props}>{props.children}</TextWrapper>;
+function Icon(props: any) {
+  return <IconWrapper {...props}>{props.children}</IconWrapper>;
 }
 
 // This export will be picked up in ./index.js
-export default Button;
+export default Icon;

@@ -20,6 +20,7 @@ export default {
   fonts: {
     mono: 'Montserrat, monospace',
   },
+  padding: [0],
   shadows: {
     small: '0 0 0px rgba(0, 0, 0, .0)',
     large: '0 0 0px rgba(0, 0, 0, .0)',

@@ -8,7 +8,9 @@ class App extends React.Component {
   public render() {
     return (
       <Flex flexDirection={'column'} justifyContent={'center'} alignItems={'center'} mt={100}>
-        <Button theme={theme}>Ez egy gomb!</Button>
+        <Button theme={theme} disabled>
+          Main button on white!
+        </Button>
       </Flex>
     );
   }
