@@ -1,5 +1,6 @@
 Button example:
 
 ```js
-<Button>Example</Button>
+        <Button variant="primary">Main button on blue!</Button>
+        <Button ml={20} variant="secondary">Main button on white!</Button>
 ```
