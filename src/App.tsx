@@ -1,18 +1,23 @@
 import * as React from 'react';
 import './App.css';
 import { Flex } from 'rebass';
-import Button from './components/button';
+import { Button } from './components/button';
+import { ThemeProvider } from 'styled-components';
+
+import theme from './theme/theme';
 
 class App extends React.Component {
   public render() {
     return (
-      <Flex flexDirection={'column'} justifyContent={'center'} alignItems={'center'} mt={100}>
-        <Button variant="primary">Main button on blue!</Button>
+      <ThemeProvider theme={theme}>
+        <Flex flexDirection={'column'} justifyContent={'center'} alignItems={'center'} mt={100}>
+          <Button variant="primary">Main button on blue!</Button>
 
-        <Button mt={20} variant="secondary">
-          Main button on white!
-        </Button>
-      </Flex>
+          <Button mt={20} variant="secondary">
+            Main button on white!
+          </Button>
+        </Flex>
+      </ThemeProvider>
     );
   }
 }
