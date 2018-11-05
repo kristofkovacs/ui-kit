@@ -27,6 +27,7 @@
         "allow-destructuring": true
       }
     ],
+    "no-unused-expression": [true, "allow-tagged-template"],
     "object-literal-sort-keys": false,
     "object-literal-shorthand": false,
     "one-variable-per-declaration": [false],

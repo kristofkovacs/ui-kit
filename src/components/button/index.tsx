@@ -3,7 +3,7 @@ import { Button as Base, ButtonProps as BaseProps } from 'rebass';
 
 /**
  *
- * @visibleName Cogito Button 🙌
+ * @visibleName Main Button
  *
  */
 
@@ -12,13 +12,14 @@ export const Button: React.SFC<BaseProps> = (props: BaseProps) => (
     {...props}
     borderRadius={20}
     border={0}
+    px={30}
+    py={14}
     css={{
-      padding: '15px',
       transition: 'all 0.1s ease-in-out',
-
+      boxShadow: '0px 7px 15px rgba(71, 135, 211, 0.25)',
       '&:hover': {
         transform: 'scale(1.05)',
-        boxShadow: '0px 7.57811px 16.2388px rgba(71, 135, 211, 0.25)',
+        boxShadow: '0px 10.2643px 20.5286px rgba(71, 135, 211, 0.3)',
       },
     }}
   />
