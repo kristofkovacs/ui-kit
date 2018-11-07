@@ -1,7 +1,7 @@
 const darkBlue = '#4787D3';
 const lightBlue = '#67BCFB';
 const almostWhite = '#FBFBFB';
-const gradient = 'linear-gradient(306.87deg, #4787D3 0%, #67BCFB 100%);';
+const gradient = 'linear-gradient(306.87deg, #FFF 0%, #000 100%);';
 const basic = '0px 7px 15px rgba(71, 135, 211, 0.25)';
 const hover = '0px 10.2643px 20.5286px rgba(71, 135, 211, 0.3)';
 

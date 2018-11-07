@@ -24,3 +24,20 @@ export const Button: React.SFC<BaseProps> = (props: BaseProps) => (
     }}
   />
 );
+
+// export const FloatingButton: React.SFC<BaseProps> = (props: BaseProps) => (
+//   <Base
+//     {...props}
+//     bg="transparent"
+//     mt={-50}
+//     css={{
+//       transition: 'all 0.2s ease-in-out',
+//       '&:hover': {
+//         transition: 'all 0.2s ease-in-out',
+//         transform: 'translatey(10px)',
+//       },
+//     }}
+//   >
+//     <Image src={downArrow} className="downButton" />
+//   </Base>
+// );

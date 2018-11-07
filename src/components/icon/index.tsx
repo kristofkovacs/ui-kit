@@ -1,10 +1,20 @@
 import * as React from 'react';
 import { Image as Base, ImageProps as BaseProps } from 'rebass';
+import downArrow from './upvote.svg';
 
 /**
  *
- * @visibleName Main Button
+ * @visibleName Icon
  *
  */
 
-export const Icon: React.SFC<BaseProps> = (props: BaseProps) => <Base width={50} height={50} {...props} />;
+export const Icon: React.SFC<BaseProps> = (props: BaseProps) => (
+  <Base
+    {...props}
+    css={{
+      backgroundImage: { downArrow },
+    }}
+  >
+    <img src={downArrow} />
+  </Base>
+);

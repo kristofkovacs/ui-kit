@@ -1,5 +1,5 @@
 Heading example:
 
 ```js
-<PrimaryHeading />
+<Heading>This is a heading</Heading>
 ```

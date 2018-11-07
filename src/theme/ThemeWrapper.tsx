@@ -10,11 +10,6 @@ body {
 
 export default class ThemeWrapper extends React.Component {
   render() {
-    return (
-      <div>
-        <button>ffffffff</button>
-        <ThemeProvider theme={theme}>{this.props.children}</ThemeProvider>
-      </div>
-    );
+    return <ThemeProvider theme={theme}>{this.props.children}</ThemeProvider>;
   }
 }
