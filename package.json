@@ -1,7 +1,7 @@
 {
   "name": "cogito-uikit",
   "homepage": "./",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "dependencies": {
     "@types/rebass": "^0.3.2",
