@@ -1,20 +1,15 @@
 import * as React from 'react';
 import { Image as Base, ImageProps as BaseProps } from 'rebass';
-import downArrow from './upvote.svg';
+// import arrowDown from './assets/arrowDown.svg';
+import arrowUp from './assets/arrowUp.svg';
 
-/**
- *
- * @visibleName Icon
- *
- */
+// type Props = {
+//     props: BaseProps,
+//     type: arrowDown || arrowUp,
+// }
 
 export const Icon: React.SFC<BaseProps> = (props: BaseProps) => (
-  <Base
-    {...props}
-    css={{
-      backgroundImage: { downArrow },
-    }}
-  >
-    <img src={downArrow} />
+  <Base {...props}>
+    <img src={arrowUp} width={props.width + 'px'} />
   </Base>
 );

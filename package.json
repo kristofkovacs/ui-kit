@@ -9,7 +9,7 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts-ts": "2.17.0",
-    "rebass": "^3.0.0-4",
+    "rebass": "^3.0.0-9",
     "styled-components": "^3.4.10"
   },
   "scripts": {

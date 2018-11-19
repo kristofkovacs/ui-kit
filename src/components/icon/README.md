@@ -1,6 +1,6 @@
 Icon example:
 
 ```js
-<Icon/>
+<Icon />
 
 ```
