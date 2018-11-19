@@ -41,11 +41,11 @@ const NoteCard: React.SFC<BaseProps> = (props: BaseProps) => (
       <Text fontSize={16} fontWeight="normal" color={'#9C9C9C'} mt={17}>
         Létfontos szerv: bőr és nyálkahártya nélkül nincs élet (ld. súlyos égést követő állapotok, Lyell szindróma)!
       </Text>
-      <Flex mt={20}>
+      <Flex mt={20} justifyContent={'space-between'}>
         <Text fontWeight={'300'} color={'#9C9C9C'} fontSize={12}>
           Updated: 2018 március 27
         </Text>
-        <Flex justifyContent={'space-between'}>
+        <Flex>
           <Text color={'#4787D3'} fontSize={20}>
             16
           </Text>

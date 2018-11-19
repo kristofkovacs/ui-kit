@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import { Flex, Image } from 'rebass';
-import { Button, FloatingButton } from './components/button';
+import { Button } from './components/button';
 import { NoteCard, Comment } from './components/card';
 
 import { ThemeProvider } from 'styled-components';
@@ -16,7 +16,6 @@ class App extends React.Component {
           <Button mt={20} variant="secondary">
             Main button on white!
           </Button>
-          <FloatingButton mt={20} />
           <Flex mt={50}>
             <NoteCard />
             <Comment ml={50} />

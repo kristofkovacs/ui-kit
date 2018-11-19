@@ -2,5 +2,5 @@ Button example:
 
 ```js
 <Button variant="primary">Main button on blue!</Button>
-<Button ml={20} variant="secondary">Main button on white!</Button>
+<Button ml={20} variant="secondary">Main button on blue!</Button>
 ```

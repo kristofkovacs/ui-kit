@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Image as Base, ImageProps as BaseProps } from 'rebass';
 // import arrowDown from './assets/arrowDown.svg';
-import arrowUp from './assets/arrowUp.svg';
+import upvote from './assets/upvote.svg';
 
 // type Props = {
 //     props: BaseProps,
@@ -10,6 +10,6 @@ import arrowUp from './assets/arrowUp.svg';
 
 export const Icon: React.SFC<BaseProps> = (props: BaseProps) => (
   <Base {...props}>
-    <img src={arrowUp} width={props.width + 'px'} />
+    <img src={upvote} width={props.width + 'px'} />
   </Base>
 );

@@ -1,2 +1,1 @@
-export { default as Button } from './Main';
-export { default as FloatingButton } from './Floating';
+export { default as Button } from './Button';
