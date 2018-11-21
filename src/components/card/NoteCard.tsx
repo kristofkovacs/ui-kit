@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Card as Base, CardProps as BaseProps, Flex, Text } from 'rebass';
+import { Card as Base, CardProps as BaseProps, Flex } from 'rebass';
 import { Icon } from '../icon';
+import { Text } from '../text';
 
 /**
  *
@@ -8,7 +9,16 @@ import { Icon } from '../icon';
  *
  */
 
-const NoteCard: React.SFC<BaseProps> = (props: BaseProps) => (
+interface ExtendedProps {
+  title: string;
+  abstract: string;
+  date: Date;
+  likes: number;
+}
+
+type Props = BaseProps & ExtendedProps;
+
+const NoteCard: React.SFC<BaseProps> = (props: Props) => (
   <Base
     {...props}
     width={300}
@@ -35,21 +45,19 @@ const NoteCard: React.SFC<BaseProps> = (props: BaseProps) => (
       }}
     />
     <Flex flexDirection={'column'} py={18} px={20}>
-      <Text fontSize={20} fontWeight="bold">
-        Origin of heart murmurs. Diastolic murmurs.
-      </Text>
-      <Text fontSize={16} fontWeight="normal" color={'#9C9C9C'} mt={17}>
-        Létfontos szerv: bőr és nyálkahártya nélkül nincs élet (ld. súlyos égést követő állapotok, Lyell szindróma)!
+      <Text type={'heading3'}>{props.title}</Text>
+      <Text type={'paragraph'} color={'#9C9C9C'} mt={17}>
+        {props.abstract}
       </Text>
       <Flex mt={20} justifyContent={'space-between'}>
-        <Text fontWeight={'300'} color={'#9C9C9C'} fontSize={12}>
-          Updated: 2018 március 27
+        <Text type={'footnote'} color={'#9C9C9C'}>
+          Updated: {props.date}
         </Text>
         <Flex>
-          <Text color={'#4787D3'} fontSize={20}>
-            16
+          <Text type={'paragraph'} color={'#4787D3'}>
+            {props.likes}
           </Text>
-          <Icon width={25} />
+          <Icon name="like" width={25} height={25} />
         </Flex>
       </Flex>
     </Flex>

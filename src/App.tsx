@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.css';
 import { Flex, Image } from 'rebass';
 import { Button } from './components/button';
-import { NoteCard, Comment } from './components/card';
+import { NoteCard } from './components/card';
 
 import { ThemeProvider } from 'styled-components';
 import theme from './theme/theme';
@@ -18,7 +18,6 @@ class App extends React.Component {
           </Button>
           <Flex mt={50}>
             <NoteCard />
-            <Comment ml={50} />
           </Flex>
           <Image width={200} height={200} src="http://pngimg.com/uploads/google/google_PNG19644.png" />
         </Flex>
