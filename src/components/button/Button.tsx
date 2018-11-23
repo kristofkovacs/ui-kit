@@ -3,7 +3,7 @@ import { Button as Base, ButtonProps as BaseProps } from 'rebass';
 
 /**
  *
- * @visibleName Main Button
+ * @visibleName Button
  *
  */
 

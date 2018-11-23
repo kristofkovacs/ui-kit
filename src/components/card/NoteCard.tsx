@@ -57,7 +57,7 @@ const NoteCard: React.SFC<BaseProps> = (props: Props) => (
           <Text type={'paragraph'} color={'#4787D3'}>
             {props.likes}
           </Text>
-          <Icon name="like" width={25} height={25} />
+          <Icon name="liketry" width={25} height={25} fill={'#000'} />
         </Flex>
       </Flex>
     </Flex>

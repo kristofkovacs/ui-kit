@@ -5,6 +5,4 @@ Icon example:
 <Icon name="instagram" />
 <Icon name="twitter" />
 <Icon name="like" />
-
-
 ```
