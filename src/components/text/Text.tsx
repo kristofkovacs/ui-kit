@@ -11,7 +11,7 @@ import { Text as Base, TextProps as BaseProps } from 'rebass';
  */
 
 interface ExtendedProps {
-  type: 'paragraph' | 'heading1' | 'heading2' | 'heading3' | 'footnote';
+  type?: 'paragraph' | 'heading1' | 'heading2' | 'heading3' | 'footnote';
 }
 
 type Props = BaseProps & ExtendedProps;

@@ -53,11 +53,11 @@ const NoteCard: React.SFC<BaseProps> = (props: Props) => (
         <Text type={'footnote'} color={'#9C9C9C'}>
           Updated: {props.date}
         </Text>
-        <Flex>
+        <Flex alignItems={'flex-end'}>
           <Text type={'paragraph'} color={'#4787D3'}>
             {props.likes}
           </Text>
-          <Icon name="liketry" width={25} height={25} fill={'#000'} />
+          <Icon ml={1} name="like" width={21} height={21} fill={'#4787D3'} />
         </Flex>
       </Flex>
     </Flex>
