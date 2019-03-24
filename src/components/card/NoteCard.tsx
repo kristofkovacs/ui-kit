@@ -12,13 +12,13 @@ import { Text } from '../text';
 interface ExtendedProps {
   title: string;
   abstract: string;
-  date: Date;
+  date: number;
   likes: number;
 }
 
 type Props = BaseProps & ExtendedProps;
 
-const NoteCard: React.SFC<BaseProps> = (props: Props) => (
+const NoteCard: React.SFC<Props> = (props: Props) => (
   <Base
     {...props}
     width={300}
