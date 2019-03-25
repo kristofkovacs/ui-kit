@@ -30,12 +30,12 @@ function Notification(props: Props) {
       >
         <Flex flexDirection={'row'} justifyContent={'space-between'}>
           <Flex py={25} px={19} alignItems={'center'}>
-            <Text type={'paragraph'} color={'#4787D3'} lineHeight={1.4}>
+            <Text type={'paragraph'} color={'primary'} lineHeight={1.4}>
               {props.text}
             </Text>
           </Flex>
           <Flex
-            bg={'#4787D3'}
+            bg={'primary'}
             width={50}
             alignItems={'center'}
             justifyContent={'center'}
@@ -43,10 +43,10 @@ function Notification(props: Props) {
               height: '120px',
               borderTopRightRadius: '20px',
               borderBottomRightRadius: '20px',
-              backgroundColor: '$(theme.colors.darkBlue)',
+              backgroundColor: '$(theme.colors.primary)',
             }}
           >
-            <Icon name="facebook" width={18} height={18} fill={'#fff'} />
+            <Icon name="facebook" width={18} height={18} fill={'white'} />
           </Flex>
         </Flex>
       </Base>

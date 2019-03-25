@@ -1,5 +1,5 @@
-const darkBlue = '#4787D3';
-const lightBlue = '#67BCFB';
+const primary = '#4787D3';
+const secondary = '#67BCFB';
 const almostWhite = '#FBFBFB';
 const gradient = 'linear-gradient(306.87deg, #4787D3 0%, #67BCFB 100%);';
 const basic = '0px 7px 15px rgba(71, 135, 211, 0.25)';
@@ -9,8 +9,8 @@ export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
     blue: '#07c',
-    darkBlue,
-    lightBlue,
+    primary: '#4787D3',
+    secondary,
     almostBlack: '#101010',
     darkGray: '#595959',
     lightGray: '#9C9C9C',
@@ -38,7 +38,7 @@ export default {
       background: gradient,
     },
     secondary: {
-      color: darkBlue,
+      color: primary,
       background: almostWhite,
     },
   },

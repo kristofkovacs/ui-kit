@@ -1,7 +1,7 @@
-const darkBlue = '#4787D3';
-const lightBlue = '#67BCFB';
+const primary = '#5AE491';
+const secondary = '#67BCFB';
 const almostWhite = '#FBFBFB';
-const gradient = 'linear-gradient(306.87deg, #FFF 0%, #000 100%);';
+const gradient = `linear-gradient(306.87deg, ${primary} 0%, #67BCFB 100%)`;
 const basic = '0px 7px 15px rgba(71, 135, 211, 0.25)';
 const hover = '0px 10.2643px 20.5286px rgba(71, 135, 211, 0.3)';
 
@@ -9,8 +9,8 @@ export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
     blue: '#07c',
-    darkBlue,
-    lightBlue,
+    primary: '#5AE491',
+    secondary,
     almostBlack: '#101010',
     darkGray: '#595959',
     lightGray: '#9C9C9C',
@@ -38,7 +38,7 @@ export default {
       background: gradient,
     },
     secondary: {
-      color: darkBlue,
+      color: primary,
       background: almostWhite,
     },
   },

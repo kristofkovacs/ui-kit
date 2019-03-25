@@ -23,41 +23,43 @@ const NoteCard: React.SFC<Props> = (props: Props) => (
     {...props}
     width={300}
     borderRadius={20}
-    bg={'#fff'}
+    bg={'almostWhite'}
     border={0}
+    boxShadow={'basic'}
     css={{
       height: '300px',
-      boxShadow: '0px 7px 15px rgba(71, 135, 211, 0.25)',
-      transition: 'all 0.2s ease-in-out',
+      boxShadow: '$(shadows.basic)',
+      transition: 'all 0.15s ease-in-out',
       '&:hover': {
-        transform: 'scale(1.1)',
-        boxShadow: '0px 10.2643px 20.5286px rgba(71, 135, 211, 0.3)',
+        transform: 'scale(1.05)',
+        boxShadow: '$(shadows.hover)',
       },
     }}
   >
     <Flex
-      bg={'#4787D3'}
+      bg={'primary'}
       css={{
         height: '35px',
         borderTopLeftRadius: '20px',
         borderTopRightRadius: '20px',
-        backgroundColor: '$(theme.colors.darkBlue)',
       }}
     />
     <Flex flexDirection={'column'} py={18} px={20}>
-      <Text type={'heading3'}>{props.title}</Text>
-      <Text type={'paragraph'} color={'#9C9C9C'} mt={17}>
+      <Text type={'heading3'} maxRows={3}>
+        {props.title}
+      </Text>
+      <Text type={'paragraph'} color={'lightGray'} mt={17} maxRows={4}>
         {props.abstract}
       </Text>
       <Flex mt={20} justifyContent={'space-between'}>
-        <Text type={'footnote'} color={'#9C9C9C'}>
+        <Text type={'footnote'} color={'lightGray'}>
           Updated: {props.date}
         </Text>
         <Flex alignItems={'flex-end'}>
-          <Text type={'paragraph'} color={'#4787D3'}>
+          <Text type={'paragraph'} color={'primary'}>
             {props.likes}
           </Text>
-          <Icon ml={1} name="like" width={21} height={21} fill={'#4787D3'} />
+          <Icon ml={1} name="like" width={21} height={21} fill={'primary'} />
         </Flex>
       </Flex>
     </Flex>

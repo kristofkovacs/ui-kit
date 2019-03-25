@@ -12,6 +12,7 @@ import { Text as Base, TextProps as BaseProps } from 'rebass';
 
 interface ExtendedProps {
   type?: 'paragraph' | 'heading1' | 'heading2' | 'heading3' | 'footnote';
+  maxRows?: number;
 }
 
 type Props = BaseProps & ExtendedProps;
@@ -23,6 +24,17 @@ interface TypeProps {
 
 function Text(props: Props) {
   let typeProps: TypeProps;
+  let limitedRows = {};
+
+  if (props.maxRows) {
+    limitedRows = {
+      display: '-webkit-box',
+      WebkitLineClamp: props.maxRows,
+      WebkitBoxOrient: 'vertical',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+    };
+  }
 
   typeProps = { size: 16, weight: 'normal' };
   switch (props.type) {
@@ -47,7 +59,7 @@ function Text(props: Props) {
       typeProps.weight = 'normal';
   }
 
-  return <Base {...props} fontSize={typeProps.size} fontWeight={typeProps.weight} />;
+  return <Base {...props} fontSize={typeProps.size} fontWeight={typeProps.weight} css={limitedRows} />;
 }
 
 // This export will be picked up in ./index.js

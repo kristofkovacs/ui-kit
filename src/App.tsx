@@ -6,11 +6,11 @@ import { NoteCard } from './components/card';
 import { Notification } from './components/notification';
 
 import { ThemeProvider } from 'styled-components';
-import theme from './theme/theme';
+import theme from './theme/theme2';
 
 const title = 'Origin of heart murmurs. Diastolic murmurs.';
 const abstract =
-  'Létfontos szerv: bőr és nyálkahártya nélkül nincs élet (ld. súlyos égést követő állapotok, Lyell szindróma)!';
+  'Létfontos szerv: bőr és nyálkahártya nélkül nincs élet (ld. súlyos égést követő állapotok, Lyell szindróma)! Létfontos szerv: bőr és nyálkahártya nélkül nincs élet (ld. súlyos égést követő állapotok, Lyell szindróma)!';
 
 class App extends React.Component {
   public render() {
