@@ -9,7 +9,7 @@ export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
     blue: '#07c',
-    primary: '#5AE491',
+    primary,
     secondary,
     almostBlack: '#101010',
     darkGray: '#595959',

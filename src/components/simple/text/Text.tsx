@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text as Base, TextProps as BaseProps } from 'rebass';
+import { Text as Base, Heading as HeadingBase, TextProps as BaseProps } from 'rebass';
 
 // Style components take CSS in a template string. Even Sass functions with work!
 // Each element is a property of styled, like h3, p, div, etc...
@@ -59,7 +59,11 @@ function Text(props: Props) {
       typeProps.weight = 'normal';
   }
 
-  return <Base {...props} fontSize={typeProps.size} fontWeight={typeProps.weight} css={limitedRows} />;
+  return props.type === 'heading1' || props.type === 'heading2' || props.type === 'heading3' ? (
+    <HeadingBase {...props} fontSize={typeProps.size} fontWeight={typeProps.weight} css={limitedRows} />
+  ) : (
+    <Base {...props} fontSize={typeProps.size} fontWeight={typeProps.weight} css={limitedRows} />
+  );
 }
 
 // This export will be picked up in ./index.js

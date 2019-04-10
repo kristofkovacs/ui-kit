@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Card as Base, CardProps as BaseProps, Flex } from 'rebass';
-import { Icon } from '../icon';
-import { Text } from '../text';
+import { Icon } from '../../simple/icon';
+import { Text } from '../../simple/text';
 
 /**
  *
@@ -28,7 +28,6 @@ const NoteCard: React.SFC<Props> = (props: Props) => (
     boxShadow={'basic'}
     css={{
       height: '300px',
-      boxShadow: '$(shadows.basic)',
       transition: 'all 0.15s ease-in-out',
       '&:hover': {
         transform: 'scale(1.05)',

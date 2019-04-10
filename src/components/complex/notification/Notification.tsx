@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Card as Base, CardProps as BaseProps, Flex } from 'rebass';
-import { Icon } from '../icon';
-import { Text } from '../text';
+import { Icon } from '../../simple/icon';
+import { Text } from '../../simple/text';
 
 interface ExtendedProps {
   text: string;

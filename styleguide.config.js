@@ -1,9 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  components: 'src/components/**/*.tsx',
-  pagePerSection: true,
+  pagePerSection: false,
   propsParser: require('react-docgen-typescript').parse,
+  sections: [
+    { name: 'Simple Components', components: 'src/components/simple/**/*.tsx' },
+    { name: 'Complex Components', components: 'src/components/complex/**/*.tsx' },
+  ],
+  skipComponentsWithoutExample: true,
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/theme/ThemeWrapper'),
   },

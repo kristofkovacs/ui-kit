@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Image as Base, ImageProps as BaseProps } from 'rebass';
 // import arrowDown from './assets/arrowDown.svg';
 import * as icons from './icons';
-import { default as theme } from '../../theme/theme';
+import { default as theme } from '../../../theme/theme';
 
 interface ExtendedProps {
   name: string;
