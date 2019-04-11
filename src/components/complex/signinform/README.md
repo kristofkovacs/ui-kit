@@ -1,5 +1,8 @@
 SigninForm example:
 
 ```js
-<SigninForm text={text} />
+const title = 'Sign in';
+
+<SigninForm title={title} />
 ```
+

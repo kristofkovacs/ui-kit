@@ -12,6 +12,9 @@ import { PopupCard } from './components/complex/popup';
 const title = 'Origin of heart murmurs. Diastolic murmurs.';
 const abstract =
   'Létfontos szerv: bőr és nyálkahártya nélkül nincs élet (ld. súlyos égést követő állapotok, Lyell szindróma)! Létfontos szerv: bőr és nyálkahártya nélkül nincs élet (ld. súlyos égést követő állapotok, Lyell szindróma)!';
+const popupCardTitle = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit?';
+const popupCardDescription =
+  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna';
 
 class App extends React.Component {
   public render() {
@@ -28,7 +31,7 @@ class App extends React.Component {
             <Notification text="This nofitication contains any further information." />
           </Flex>
           <Flex mt={50}>
-            <PopupCard text="This nofitication contains any further information." />
+            <PopupCard title={popupCardTitle} description={popupCardDescription} />
           </Flex>
           <Flex mt={50}>
             <Button variant="primary" icon="like" iconColor="white" label={'Like'} />
