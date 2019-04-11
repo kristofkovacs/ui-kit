@@ -1,7 +1,7 @@
 {
   "name": "cogito-uikit",
   "homepage": "./",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "private": false,
   "dependencies": {
     "npm": "^6.4.1",
