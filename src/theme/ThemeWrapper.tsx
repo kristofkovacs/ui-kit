@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ThemeProvider, injectGlobal } from 'styled-components';
-import theme from './theme2';
+import theme from './theme';
 
 injectGlobal`
 body {
