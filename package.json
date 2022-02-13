@@ -28,7 +28,7 @@
     "@types/react-dom": "^16.0.9",
     "@types/rebass": "^0.3.2",
     "@types/styled-system": "^3.0.7",
-    "ajv": "^6.5.5",
+    "ajv": "^6.12.3",
     "emotion": "^9.2.12",
     "grid-styled": "^5.0.2",
     "prettier": "^1.15.1",
